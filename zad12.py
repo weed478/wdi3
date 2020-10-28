@@ -17,7 +17,7 @@ while i < len(tab) - 1:
         i += 1
     if difference > 0:
         max_length_ascend = max(max_length_ascend, length)
-    else:
+    elif difference < 0:
         max_length_desc = max(max_length_desc, length)
 
 print(max_length_ascend - max_length_desc)
